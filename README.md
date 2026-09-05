@@ -60,6 +60,9 @@ window.SITE_CONFIG = {
 | `js/config.js` | SNS / mailto / フォーム設定 |
 | `js/main.js` | ナビ・設定の適用 |
 | `favicon.svg` | ファビコン |
+| `data/events.json` | イベント自動更新のスナップショット |
+| `scripts/update_events.py` | 市公開ページからのイベント更新 |
+| `.github/workflows/update-events.yml` | 週次自動更新 |
 
 ## 無料ホスティング（後から）
 
@@ -69,6 +72,23 @@ window.SITE_CONFIG = {
 - **Cloudflare Pages** … Git 連携またはフォルダをアップロード
 
 いまは Vercel のセットアップは不要です。公開時に上記のいずれかを選んでください。
+
+
+## イベント自動更新（GitHub Actions）
+
+毎週月曜 00:00 UTC（日本時間 月曜 09:00）に、湖南市の公開イベントページを参照して `events.html` の自動更新区間と `data/events.json` を更新します。
+
+- ワークフロー: `.github/workflows/update-events.yml`（`workflow_dispatch` でも手動実行可）
+- スクリプト: `scripts/update_events.py`
+- 更新対象: `events.html` 内の `<!-- AUTO:council -->` / `related` / `city` 区間
+- 自団体の開催予定・注記フッターは手動のまま（スクリプトは触らない）
+- 取得できなかった場合は既存データを維持し、架空のイベントは追加しません
+
+手動実行例:
+
+```bash
+gh workflow run update-events.yml
+```
 
 ## ライセンス・表記
 
