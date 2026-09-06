@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SNS｜湖南市減税会</title>
-  <meta name="description" content="湖南市減税会の公式SNSへの導線。X・YouTubeなどで情報を発信しています。">
+  <title>湖南市の実情｜湖南市減税会</title>
+  <meta name="description" content="湖南市の財政・大型事業・歳出の実態を、公開資料ベースで整理する入口ページです。">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -25,7 +25,7 @@
       <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
         <ul>
           <li><a href="index.html">トップ</a></li>
-          <li><a href="jitsujo.html">実情</a></li>
+          <li><a href="jitsujo.html" aria-current="page">実情</a></li>
           <li><a href="proposals.html">提言</a></li>
           <li><a href="participate.html">参加</a></li>
           <li><a href="reports.html">活動報告</a></li>
@@ -38,32 +38,48 @@
 
   <main class="site-main">
     <div class="container">
+
       <header class="page-intro">
-        <h1>SNS</h1>
-        <p class="muted">公式アカウントへの導線です。公開中のサービスからフォロー・視聴できます。</p>
+        <h1>湖南市の実情</h1>
+        <p class="lead-text">市の財政・大型事業・歳出の実態を、公開資料ベースで整理する入口です。詳細な数値・出典は各ページをご覧ください。</p>
       </header>
 
-      <div class="sns-grid">
-        <a class="sns-card" data-sns="x" href="#" target="_blank" rel="noopener noreferrer">
-          <div class="sns-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z"/></svg>
-          </div>
-          <div>
-            <strong>X（旧Twitter）</strong>
-            <span>最新の発信をフォロー</span>
-          </div>
-        </a>
+      <section class="section" aria-labelledby="hub-title">
+        <h2 class="section-title" id="hub-title">論点を見る</h2>
+        <ul class="card-list hub-cards">
+          <li class="card card--hub">
+            <h3><a href="finance.html">財政</a></h3>
+            <p>予算規模・経常収支比率など、公開資料による客観データの整理。</p>
+            <p class="muted" style="margin-top:0.75rem;margin-bottom:0;"><a href="finance.html">湖南市の財政を知る →</a></p>
+          </li>
+          <li class="card card--hub">
+            <h3><a href="cityhall.html">新庁舎</a></h3>
+            <p>経緯・論点・傍聴の呼びかけ。建設的な議論のための整理。</p>
+            <p class="muted" style="margin-top:0.75rem;margin-bottom:0;"><a href="cityhall.html">新庁舎整備を問う →</a></p>
+          </li>
+          <li class="card card--hub">
+            <h3><a href="spending.html">歳出</a></h3>
+            <p>補助費等の動向と市の見直し指針を突き合わせ、検証の視点を示します。</p>
+            <p class="muted" style="margin-top:0.75rem;margin-bottom:0;"><a href="spending.html">削減すべき歳出 →</a></p>
+          </li>
+        </ul>
+        <p class="muted" style="margin-top:1.25rem;">出典・一次資料のリンクは、各ページ内の「出典」欄に掲載しています。</p>
+      </section>
 
-        <a class="sns-card" data-sns="youtube" href="#" target="_blank" rel="noopener noreferrer">
-          <div class="sns-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186 31.247 31.247 0 000 12.017a31.248 31.248 0 00.502 5.831 3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136A31.248 31.248 0 0024 12.017a31.247 31.247 0 00-.502-5.831zM9.545 15.568V8.466l6.345 3.551-6.345 3.551z"/></svg>
-          </div>
-          <div>
-            <strong>YouTube</strong>
-            <span>動画で活動や説明を視聴</span>
-          </div>
-        </a>
-      </div>
+      <section class="section" aria-labelledby="next-title">
+        <h2 class="section-title" id="next-title">あわせて読む</h2>
+        <ul class="card-list">
+          <li class="card">
+            <h3><a href="proposals.html">政策提言</a></h3>
+            <p>実情を踏まえた、短期・中期の実行可能な提言。</p>
+          </li>
+          <li class="card">
+            <h3><a href="participate.html">参加・意見提出</a></h3>
+            <p>議会傍聴・意見提出など、いまできる参加方法。</p>
+          </li>
+        </ul>
+      </section>
+
     </div>
   </main>
 
