@@ -5,6 +5,7 @@
 window.SITE_CONFIG = {
   mailto: "mailto:konancity20250314@gmail.com",
   shigaJoinUrl: "https://www.shigagenzeikai.com/",
+  gaMeasurementId: "G-RYVVQZCTH9",
   googleFormUrl: "https://docs.google.com/forms/d/e/1FAIpQLSdZRo4Ocwxs6JpCIuT4ZI8rluuRJpkEyEUM9nTRHnXsarf4ug/viewform",
   sns: {
     x: "https://x.com/nuitshiki",

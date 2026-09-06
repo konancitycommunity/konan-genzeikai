@@ -97,6 +97,21 @@
     applySns();
   }
 
+
+  function loadGa() {
+    var id = config.gaMeasurementId;
+    if (!id || typeof id !== "string" || id.indexOf("G-") !== 0) return;
+    var s = document.createElement("script");
+    s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(id);
+    document.head.appendChild(s);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag("js", new Date());
+    gtag("config", id);
+  }
+
   function setupNav() {
     var toggle = document.querySelector(".nav-toggle");
     var nav = document.querySelector(".site-nav");
@@ -132,5 +147,6 @@
     applyConfig();
     setupNav();
     setActiveNav();
+    loadGa();
   });
 })();
