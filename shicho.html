@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>市長｜公約トラッキング｜湖南市減税会</title>
+  <meta name="description" content="湖南市長・松浦加代子氏のプロフィールと、3つのビジョン・12のゴールの市民向け進捗トラッキング。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+  .draft-note{margin:0 0 0.5rem;font-size:0.875rem;color:var(--color-muted)}
+  .shicho-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius);padding:1.25rem 1.3rem;box-shadow:var(--shadow-sm)}
+  .shicho-name{margin:0;font-size:1.35rem;color:var(--color-primary)}
+  .shicho-sub{margin:0.25rem 0 0;font-size:0.88rem;color:var(--color-muted)}
+  .shicho-tags{display:flex;flex-wrap:wrap;gap:0.4rem;margin-top:0.65rem}
+  .shicho-tag{display:inline-block;font-size:0.78rem;font-weight:700;color:#fff;background:var(--color-accent);border-radius:999px;padding:0.2rem 0.7rem}
+  .shicho-tag.is-soft{background:var(--color-accent-soft);color:var(--color-primary)}
+  .shicho-meta{list-style:none;margin:1rem 0 0;padding:0;display:grid;gap:0.4rem;font-size:0.9rem}
+  .shicho-meta li{display:grid;grid-template-columns:6.2rem 1fr;gap:0.5rem}
+  .shicho-meta li span{color:var(--color-muted);font-weight:600}
+  .shicho-links{margin:0.9rem 0 0;font-size:0.88rem}
+  .timeline{margin:1rem 0 0;padding:0;list-style:none;border-left:3px solid var(--color-accent)}
+  .timeline li{position:relative;padding:0 0 1rem 1.1rem}
+  .timeline li:last-child{padding-bottom:0}
+  .timeline li::before{content:"";position:absolute;left:-0.5rem;top:0.35rem;width:0.65rem;height:0.65rem;background:var(--color-primary);border:2px solid #fff;border-radius:50%;box-shadow:0 0 0 1px var(--color-accent)}
+  .timeline-date{display:block;font-size:0.8rem;font-weight:700;color:var(--color-accent)}
+  .summary-box{margin:1rem 0 0;padding:1rem 1.1rem;background:#f0f5f3;border:1px solid var(--color-border);border-radius:var(--radius-sm)}
+  .summary-box ul{list-style:none;margin:0.5rem 0 0;padding:0;display:flex;flex-wrap:wrap;gap:0.5rem}
+  .summary-box li{font-size:0.85rem;font-weight:600}
+  .summary-box li span{display:inline-block;border-radius:999px;padding:0.15rem 0.55rem;margin-right:0.25rem;font-size:0.75rem}
+  .pledge-filters{display:flex;flex-wrap:wrap;gap:0.5rem;margin:0.75rem 0 0.35rem}
+  .pledge-filter{appearance:none;border:1px solid var(--color-border);background:#fff;color:var(--color-primary);border-radius:999px;padding:0.4rem 0.85rem;font-size:0.8rem;font-weight:600;cursor:pointer;font-family:inherit;min-height:2.25rem}
+  .pledge-filter.is-active{background:var(--color-primary);color:#fff;border-color:var(--color-primary)}
+  .pledge-grid{display:grid;gap:1rem;grid-template-columns:1fr;margin-top:1rem}
+  .pledge-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius);padding:1.1rem 1.15rem;box-shadow:var(--shadow-sm)}
+  .pledge-card.is-hidden{display:none}
+  .pledge-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.4rem;margin-bottom:0.35rem}
+  .pledge-vision{margin:0;font-size:0.75rem;font-weight:700;color:var(--color-accent)}
+  .pledge-goal{margin:0;font-size:1.02rem;color:var(--color-primary);line-height:1.4}
+  .pledge-desc{margin:0.55rem 0 0;font-size:0.88rem;line-height:1.6}
+  .pledge-track,.pledge-evidence,.pledge-related{margin:0.55rem 0 0;font-size:0.82rem;color:var(--color-muted);line-height:1.55}
+  .pledge-status{display:inline-block;font-size:0.75rem;font-weight:700;border-radius:999px;padding:0.2rem 0.65rem}
+  .status-todo{background:#eee;color:#555}
+  .status-check{background:#eef2f8;color:#334155}
+  .status-doing{background:#fff3cd;color:#8a6d00}
+  .status-partial{background:#d9edf7;color:#20647a}
+  .status-done{background:#d4f5e3;color:#0d6b3d}
+  .compare-table{width:100%;border-collapse:collapse;font-size:0.88rem;margin-top:0.6rem;background:#fff}
+  .compare-table th,.compare-table td{border:1px solid var(--color-border);padding:0.45rem 0.55rem;text-align:left;vertical-align:top}
+  .compare-table th{background:var(--color-accent-soft);color:var(--color-primary)}
+  .disclaimer{margin-top:1rem;padding:0.85rem 1rem;background:#fff8e8;border:1px solid #e8d4a8;border-radius:var(--radius-sm);font-size:0.82rem;color:#5c4a1a}
+  @media(min-width:720px){.pledge-grid{grid-template-columns:1fr 1fr}}
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" aria-hidden="true">
+          <rect width="64" height="64" rx="14" fill="#0d5c4d"/>
+          <path d="M18 42V22h6.2c4.6 0 7.4 2.4 7.4 6.2 0 3.7-2.7 6.1-7.2 6.1H24.2v7.7H18zm6.2-12.3c1.7 0 2.7-.9 2.7-2.3s-1-2.3-2.7-2.3H24.2v4.6h.02zM36.5 42V22H46c5.4 0 8.8 3.2 8.8 8.1S51.4 38.2 46 38.2h-3.3V42h-6.2zm6.2-9.4H46c2.3 0 3.7-1.3 3.7-3.5S48.3 25.6 46 25.6h-3.3v7z" fill="#f4faf8"/>
+          <circle cx="50" cy="16" r="4" fill="#2a9d8f"/>
+        </svg>
+        <span>湖南市減税会</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="メインメニュー">
+        <ul>
+          <li><a href="index.html">トップ</a></li>
+          <li><a href="kangae.html">考え方</a></li>
+          <li><a href="jitsujo.html">実情</a></li>
+          <li><a href="proposals.html">提言</a></li>
+          <li><a href="shicho.html" aria-current="page">市長</a></li>
+          <li><a href="participate.html">参加</a></li>
+          <li><a href="reports.html">活動報告</a></li>
+          <li><a href="hyoka.html">事務事業評価</a></li>
+          <li><a href="events.html">イベント</a></li>
+          <li><a href="join.html">入会</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <div class="container">
+      <header class="page-intro">
+        <h1>市長・公約トラッキング</h1>
+        <p class="lead-text">松浦加代子市長のプロフィールと、「3つのビジョン・12のゴール」を整理します。いまは達成・未達を断定せず、「何を数字で追うか」を置くページです。</p>
+      </header>
+
+      <section class="section">
+        <article class="shicho-card">
+          <h2 class="shicho-name">松浦 加代子</h2>
+          <p class="shicho-sub">まつうら かよこ｜第3代湖南市長（1期）／就任：令和6年11月7日</p>
+          <div class="shicho-tags">
+            <span class="shicho-tag">無所属・新人で初当選</span>
+            <span class="shicho-tag is-soft">キャッチフレーズ：市民笑顔率世界一！</span>
+          </div>
+          <ul class="shicho-meta">
+            <li><span>生年月日</span>昭和38年（1963年）2月10日</li>
+            <li><span>出身</span>滋賀県湖南市（旧甲西町）</li>
+            <li><span>学歴</span>滋賀大学教育学部卒業（昭和60年3月）</li>
+            <li><span>経歴</span>小学校教諭（25年）→ 市教委指導主事 → 発達支援室長 → 教頭・校長 → 学校教育課長 → 湖南市教育長 など</li>
+          </ul>
+          <p class="shicho-links">
+            <a href="https://www.city.shiga-konan.lg.jp/shisei/shichoshitsu_2/36051.html" target="_blank" rel="noopener">市長ごあいさつ（市公式）</a>
+            ·
+            <a href="https://www.city.shiga-konan.lg.jp/soshiki/sogo_seisaku/hisyo/shichoshitsu/11/reiwa6nen11gatukara/36222.html" target="_blank" rel="noopener">令和6年12月所信表明</a>
+            ·
+            <a href="https://www.city.shiga-konan.lg.jp/shisei/shichoshitsu_2/6/index.html" target="_blank" rel="noopener">記者会見一覧（市公式）</a>
+            ·
+            <a href="https://www.city.shiga-konan.lg.jp/shisei/shichoshitsu_2/6/r7/37491.html" target="_blank" rel="noopener">令和7年4月定例会見（記録）</a>
+          </p>
+        </article>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">就任までの公開タイムライン</h2>
+        <ul class="timeline">
+          <li><span class="timeline-date">2024-10-27</span>市長選挙（12年ぶりの選挙戦）。松浦氏が初当選。</li>
+          <li><span class="timeline-date">2024-11-07</span>就任・初登庁。3K（機動力・根拠・心）を強調（市の就任会見個別ページは現在404のため、<a href="https://www.city.shiga-konan.lg.jp/shisei/shichoshitsu_2/6/index.html" target="_blank" rel="noopener">記者会見一覧</a>／報道参照）。</li>
+          <li><span class="timeline-date">2024-12</span>市議会定例会で所信表明。「3つのビジョン・12のゴール」を提示。</li>
+          <li><span class="timeline-date">2025-04-01</span>定例会見で庁舎・図書館構想・消防署移転など具体施策に言及。</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">直近の市長選挙（令和6年10月27日）</h2>
+        <table class="compare-table">
+          <thead><tr><th>結果</th><th>候補</th><th>属性</th><th>得票</th><th>得票率</th></tr></thead>
+          <tbody>
+            <tr><td>当選</td><td>松浦 加代子</td><td>無所属・新人</td><td>9,651</td><td>40.1%</td></tr>
+            <tr><td>次点</td><td>谷畑 英吾</td><td>無所属・元職</td><td>8,272</td><td>34.3%</td></tr>
+            <tr><td>3位</td><td>藤川 みゆき</td><td>無所属・新人</td><td>6,163</td><td>25.6%</td></tr>
+          </tbody>
+        </table>
+        <p class="muted" style="font-size:0.82rem;margin-top:0.6rem;">投票率58.16%／有権者数42,147人。出典：市の選挙結果資料（参考HTMLより）。</p>
+      </section>
+
+      <section class="section">
+        <h2 class="section-title">公約トラッキング（指標の見え方）</h2>
+        <p style="font-size:0.9rem;">所信表明の12ゴールをカード化。達成断定はせず、公開指標の有無と「欲しい数字」を置きます。</p>
+        <div class="summary-box">
+          <strong>いまの前提</strong>
+          <p style="margin:0.5rem 0 0;font-size:0.88rem;line-height:1.6;">12ゴールの多くは、所信表明時点で<strong>達成判定できるKPI（人数・件数・予算額・期限）が公開されていません</strong>。会見で名前が出ても、進捗率は測れないことが多いです。このページは「達成／未達」ではなく、<strong>指標が公開されているか／何を追うべきか</strong>を置きます。</p>
+          <ul>
+            <li><span class="status-doing">言及あり（数値なし）</span> 会見・所信で話題はあるが、判定用の数字がない</li>
+            <li><span class="status-check">指標未設定</span> 追い方（指標）自体がまだ見えない</li>
+            <li><span class="status-done">数値あり</span> 公開数字で進捗を語れる（現時点ではほぼ該当なし）</li>
+          </ul>
+          <p class="muted" style="margin:0.6rem 0 0;font-size:0.8rem;">最終更新：2026-09-09</p>
+        </div>
+        <div class="disclaimer">ステータスは市の公式評価ではありません。公開資料で「測れる数字があるか」を整理したものです。数字が出てきたら「数値あり」に上げ、達成判定はそのとき改めて行います。</div>
+
+        <p style="margin:1rem 0 0.25rem;font-size:0.85rem;font-weight:700;color:var(--color-muted)">ビジョン</p>
+        <div class="pledge-filters" role="toolbar" aria-label="ビジョンフィルター">
+          <button type="button" class="pledge-filter is-active" data-vision="all">すべて</button>
+          <button type="button" class="pledge-filter" data-vision="v1">心でつながる</button>
+          <button type="button" class="pledge-filter" data-vision="v2">稼げるまち</button>
+          <button type="button" class="pledge-filter" data-vision="v3">市民とつくる</button>
+        </div>
+        <p style="margin:0.75rem 0 0.25rem;font-size:0.85rem;font-weight:700;color:var(--color-muted)">進捗</p>
+        <div class="pledge-filters" role="toolbar" aria-label="進捗フィルター">
+          <button type="button" class="pledge-filter is-active" data-status="all">すべて</button>
+          <button type="button" class="pledge-filter" data-status="言及あり">着手中</button>
+          <button type="button" class="pledge-filter" data-status="指標未設定">確認中</button>
+          <button type="button" class="pledge-filter" data-status="指標未設定">未着手</button>
+        </div>
+        <p class="muted" id="pledge-count" style="margin-top:0.5rem"></p>
+        <div class="pledge-grid">
+          
+        <article class="pledge-card" data-vision="v1" data-status="言及あり">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン1｜心でつながるまち</p>
+            <span class="pledge-status status-doing">言及あり（数値なし）</span>
+          </div>
+          <h3 class="pledge-goal">ゴール1：子育てを楽しめるまち</h3>
+          <p class="pledge-desc">甲西図書館のリニューアル、全天候型の遊び場、働き方改革の働きかけ、延長保育・病児保育の充実。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：図書館リニューアル構想・保育関連予算。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 令和7年4月市長会見で「甲西図書館のリニューアル構想の構築」に言及。</p>
+          <p class="pledge-related">関連ページ：<a href="finance.html">財政</a></p>
+        </article>
+        <article class="pledge-card" data-vision="v1" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン1｜心でつながるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール2：発達支援システムが充実しているまち</h3>
+          <p class="pledge-desc">乳幼児期から就労まで、教育・福祉・保健・医療・就労が連携する支援。人財育成・配置の充実。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：発達支援室の人員・予算の推移。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。以降の定量進捗は要確認。</p>
+          
+        </article>
+        <article class="pledge-card" data-vision="v1" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン1｜心でつながるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール3：市教育方針を共に練り上げるまち</h3>
+          <p class="pledge-desc">総合教育会議での市教育方針承認と、それに沿った教育充実。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：総合教育会議の開催・議事録公開。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。公開議事の継続確認が必要。</p>
+          
+        </article>
+        <article class="pledge-card" data-vision="v1" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン1｜心でつながるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール4：高齢者を支える輪が広がるまち</h3>
+          <p class="pledge-desc">地域包括ケアの充実、生活支援コーディネーターの配置拡大・周知。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：コーディネーター配置数。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。配置数の公開データ要確認。</p>
+          
+        </article>
+        <article class="pledge-card" data-vision="v2" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン2｜稼げるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール5：3駅を軸とした観光・交流のまち</h3>
+          <p class="pledge-desc">JR甲西駅の行き違い整備要望、駅周辺整備の推進。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：国・JRへの要望、駅周辺整備の進捗。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。</p>
+          
+        </article>
+        <article class="pledge-card" data-vision="v2" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン2｜稼げるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール6：企業が進出したくなるまち</h3>
+          <p class="pledge-desc">企業誘致、サプライチェーン連携、異業種交流、伝統産業と組んだ観光・ブランド創出。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：誘致件数、新規ブランド・観光施策。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。</p>
+          <p class="pledge-related">関連ページ：<a href="spending.html">歳出</a></p>
+        </article>
+        <article class="pledge-card" data-vision="v2" data-status="言及あり">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン2｜稼げるまち</p>
+            <span class="pledge-status status-doing">言及あり（数値なし）</span>
+          </div>
+          <h3 class="pledge-goal">ゴール7：SDGs未来都市にふさわしいまち</h3>
+          <p class="pledge-desc">こなんウルトラパワー（地域新電力）を核とした環境政策と市民還元。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：還元事業の具体化、SDGs関連事業。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> こなんSDGsカレッジ2026（10/17–18）など市の継続事業あり。新電力還元の具体は要確認。</p>
+          <p class="pledge-related">関連ページ：<a href="events.html">イベント</a></p>
+        </article>
+        <article class="pledge-card" data-vision="v2" data-status="言及あり">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン2｜稼げるまち</p>
+            <span class="pledge-status status-doing">言及あり（数値なし）</span>
+          </div>
+          <h3 class="pledge-goal">ゴール8：20年後を見据えたインフラのまち</h3>
+          <p class="pledge-desc">国道1号の4車線化要望（消防署移転含む構想）、コミュニティバス見直し。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：4車線化要望、バス路線改定。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 令和7年4月会見で湖南中央消防署の移転・新築に言及。バス見直しは別途確認。</p>
+          
+        </article>
+        <article class="pledge-card" data-vision="v3" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン3｜市民とつくるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール9：多様な人が参画できるまち</h3>
+          <p class="pledge-desc">市民人財（若者、シニア、障がい者、外国籍、クリエイター等）登録制度の創設。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：制度創設時期・登録者数。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。制度の公開有無は要確認。</p>
+          <p class="pledge-related">関連ページ：<a href="participate.html">参加</a></p>
+        </article>
+        <article class="pledge-card" data-vision="v3" data-status="言及あり">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン3｜市民とつくるまち</p>
+            <span class="pledge-status status-doing">言及あり（数値なし）</span>
+          </div>
+          <h3 class="pledge-goal">ゴール10：東西庁舎周辺整備を市民と進めるまち</h3>
+          <p class="pledge-desc">東庁舎整備を先行。タウンミーティング後に議会へ。西庁舎・石部文化総合センターも聴取。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：基本計画・議会提出、タウンミーティング、債務負担行為の審議。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 新庁舎をめぐる債務負担行為（報道上133億円規模）が2026年9月議会局面。当サイトの新庁舎ページでも整理中。</p>
+          <p class="pledge-related">関連ページ：<a href="cityhall.html">新庁舎</a> · <a href="finance.html">財政</a></p>
+        </article>
+        <article class="pledge-card" data-vision="v3" data-status="指標未設定">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン3｜市民とつくるまち</p>
+            <span class="pledge-status status-check">指標未設定</span>
+          </div>
+          <h3 class="pledge-goal">ゴール11：防災減災を市民とともに進めるまち</h3>
+          <p class="pledge-desc">社会資本の耐震化、ふるさと防災チーム、消防団・防災士との連携。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：耐震化予算、防災チーム組成数。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 所信表明に記載。</p>
+          
+        </article>
+        <article class="pledge-card" data-vision="v3" data-status="言及あり">
+          <div class="pledge-top">
+            <p class="pledge-vision">ビジョン3｜市民とつくるまち</p>
+            <span class="pledge-status status-doing">言及あり（数値なし）</span>
+          </div>
+          <h3 class="pledge-goal">ゴール12：市役所職員が3Kで働くまち</h3>
+          <p class="pledge-desc">機動力・根拠・心。心理的安全性と職員提案型の組織。市長が「最も力を入れたい」と明言。</p>
+          <p class="pledge-track"><strong>追跡</strong> 追跡：職員提案制度、時間外・離職の公開指標。</p>
+          <p class="pledge-evidence"><strong>公開情報メモ</strong> 就任会見・令和7年4月会見でも3Kを繰り返し言及。制度・指標の公開は要確認。</p>
+          
+        </article>
+        </div>
+        <p class="muted" style="font-size:0.82rem;margin-top:1rem;">出典：
+          <a href="https://www.city.shiga-konan.lg.jp/soshiki/sogo_seisaku/hisyo/shichoshitsu/11/reiwa6nen11gatukara/36222.html" target="_blank" rel="noopener">令和6年12月所信表明</a>／
+          <a href="https://www.city.shiga-konan.lg.jp/shisei/shichoshitsu_2/6/index.html" target="_blank" rel="noopener">記者会見一覧</a>／
+          <a href="https://www.city.shiga-konan.lg.jp/shisei/shichoshitsu_2/6/r7/37491.html" target="_blank" rel="noopener">令和7年4月定例会見</a>
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-name">湖南市減税会</p>
+      <p class="footer-tagline">減税で、暮らしにゆとりを。</p>
+      <p class="footer-links"><a href="privacy.html">個人情報保護ポリシー</a></p>
+      <p class="footer-copy">&copy; 2026 湖南市減税会</p>
+    </div>
+  </footer>
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+  (function(){
+    var vBtns = document.querySelectorAll('[data-vision]');
+    var sBtns = document.querySelectorAll('[data-status]');
+    var cards = document.querySelectorAll('.pledge-card');
+    var countEl = document.getElementById('pledge-count');
+    var vision = 'all', status = 'all';
+    function apply(){
+      var n = 0;
+      cards.forEach(function(card){
+        var okV = vision === 'all' || card.getAttribute('data-vision') === vision;
+        var okS = status === 'all' || card.getAttribute('data-status') === status;
+        var show = okV && okS;
+        card.classList.toggle('is-hidden', !show);
+        if (show) n++;
+      });
+      if (countEl) countEl.textContent = '表示 ' + n + ' / ' + cards.length + ' ゴール';
+    }
+    vBtns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        vBtns.forEach(function(b){ b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        vision = btn.getAttribute('data-vision');
+        apply();
+      });
+    });
+    sBtns.forEach(function(btn){
+      btn.addEventListener('click', function(){
+        sBtns.forEach(function(b){ b.classList.remove('is-active'); });
+        btn.classList.add('is-active');
+        status = btn.getAttribute('data-status');
+        apply();
+      });
+    });
+    apply();
+  })();
+  </script>
+</body>
+</html>
