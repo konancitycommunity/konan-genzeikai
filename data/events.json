@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-07T00:04:35Z",
+  "updatedAt": "2026-09-14T00:04:19Z",
   "sections": {
     "council": [
       {
@@ -60,44 +60,19 @@
       },
       {
         "title": "湖南市人権なんでも相談（予約不要）",
-        "dateText": "09月09日(水曜日)ほか",
-        "datetime": "2026-09-09",
+        "dateText": "10月08日(木曜日)ほか",
+        "datetime": "2026-10-08",
         "place": "石部老人福祉センター・社会福祉センター",
         "url": "https://www.city.shiga-konan.lg.jp/kurashi/sodan/jinkensoudan/30634.html",
         "tag": "市主催"
       },
       {
         "title": "KONANスポーツデー(令和8年度)",
-        "dateText": "09月12日(土曜日)ほか",
-        "datetime": "2026-09-12",
+        "dateText": "10月17日(土曜日)ほか",
+        "datetime": "2026-10-17",
         "place": "湖南市総合体育館",
         "url": "https://www.city.shiga-konan.lg.jp/topics/40385.html",
         "note": "各回19時～21時",
-        "tag": "市主催"
-      },
-      {
-        "title": "【参加企業募集】令和8年度「保活直前！お仕事探し応援ウィーク」",
-        "dateText": "09月08日(火曜日)ほか",
-        "datetime": "2026-09-08",
-        "url": "https://www.city.shiga-konan.lg.jp/topics/40843.html",
-        "tag": "市主催"
-      },
-      {
-        "title": "つどいの広場おおぞら（紙粘土手形作り）",
-        "dateText": "09月11日(金曜日)ほか",
-        "datetime": "2026-09-11",
-        "place": "つどいの広場おおぞら",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41321.html",
-        "note": "9月11日（金曜日）、9月16日(水曜日）いずれも午前10時30分から",
-        "tag": "市主催"
-      },
-      {
-        "title": "つどいの広場くまさんとくらぶ （9月）",
-        "dateText": "09月11日(金曜日)",
-        "datetime": "2026-09-11",
-        "place": "菩提寺優愛保育園モンチ",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41317.html",
-        "note": "9月11日(金曜日)10時00分から12時00分",
         "tag": "市主催"
       },
       {
@@ -125,6 +100,33 @@
         "place": "石部子育て支援センターたんぽぽはうす",
         "url": "https://www.city.shiga-konan.lg.jp/soshiki/kodomomirai/kodomokosodate/event/tanpopo/40703.html",
         "note": "9月15日（火曜日）午前11時10分～11時30分",
+        "tag": "市主催"
+      },
+      {
+        "title": "つどいの広場おおぞら（紙粘土手形作り）",
+        "dateText": "09月16日(水曜日)ほか",
+        "datetime": "2026-09-16",
+        "place": "つどいの広場おおぞら",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41321.html",
+        "note": "9月11日（金曜日）、9月16日(水曜日）いずれも午前10時30分から",
+        "tag": "市主催"
+      },
+      {
+        "title": "つどいの広場くまさんとくらぶ（こぐまさんタイム)",
+        "dateText": "09月16日(水曜日)ほか",
+        "datetime": "2026-09-16",
+        "place": "菩提寺優愛保育園モンチ",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41301.html",
+        "note": "9月2日（水曜日）午前10時～12時 ・ 9月16日（水曜日）午前10時～12時",
+        "tag": "市主催"
+      },
+      {
+        "title": "チェリーキッズ（多胎児親子の集い）",
+        "dateText": "09月16日(水曜日)",
+        "datetime": "2026-09-16",
+        "place": "石部子育て支援センター たんぽぽはうす",
+        "url": "https://www.city.shiga-konan.lg.jp/event/25763.html",
+        "note": "9月16日（水曜日）午前10時から11時30分",
         "tag": "市主催"
       }
     ]
