@@ -29,6 +29,17 @@ python3 drafts/update_events_pref.py
 書き込み先は **`drafts/events.html` と `drafts/events.json` のみ**です。  
 `events.html` / `data/events.json` / `scripts/update_events.py` / `.github/workflows` は変更しません。
 
+## 関連（交通・税）への自動振り分け
+
+`drafts/update_events_pref.py` は、市・県から取得した一覧のうち、次のようなキーワードに当てはまる催しを **関連（交通・税）** へ移します（市主催／滋賀県には残しません）。
+
+- 例: `税` / `交通税` / `地域交通` / `討論` / `討論会` / `タウンミーティング` / `県民対話` / `みらいトーク` / `住民説明` / `パブリックコメント`（および説明会）
+- 一般の講座・セミナー・スポーツなどは対象外（キーワードは意図的に狭め）
+- 手作業の curated（例: SHIGAみらいトーク）を先に載せ、URL・タイトルの重複は除外
+- 自動追加はおおむね最大8件（`MAX_RELATED_AUTO`）
+
+ライブの `scripts/update_events.py` / `events.html` / `data/events.json` / Actions はこの下書き専用ロジックを使いません。
+
 ## 公開するとき（ユーザーが「公開」と言った場合）
 
 1. `drafts/events.html` の滋賀県セクション（`<!-- AUTO:prefecture -->`）をライブ `events.html` にマージ

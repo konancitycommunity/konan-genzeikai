@@ -4,6 +4,9 @@ Draft-only events updater: city (Konan) + prefecture (Shiga).
 
 Writes ONLY to drafts/events.html and drafts/events.json.
 Does not touch live events.html, data/events.json, or Monday Actions.
+
+Tax / transport-tax / public-discussion items matching RELATED_KEYWORDS
+are routed into the 関連（交通・税） section (merged with curated related).
 """
 
 from __future__ import annotations
@@ -42,6 +45,24 @@ logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 log = logging.getLogger("update_events_pref_draft")
 
 MAX_PREF_EVENTS = 12
+MAX_RELATED_AUTO = 8
+RELATED_TAG = "関連（交通・税）"
+
+# Route tax / transport-tax / public-discussion items into 関連（交通・税）.
+# Keep narrow: do not treat every 講座・セミナー as related.
+RELATED_KEYWORDS = (
+    "交通税",
+    "地域交通",
+    "みらいトーク",
+    "タウンミーティング",
+    "県民対話",
+    "住民説明",
+    "パブリックコメント説明会",
+    "パブリックコメント",
+    "討論会",
+    "討論",
+    "税",
+)
 
 # Prefer civic / public-facing announcements.
 PREF_PRIORITY_KEYWORDS = (
@@ -252,6 +273,132 @@ def select_pref_events(scraped: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return out
 
 
+
+def related_match_text(item: dict[str, Any]) -> str:
+    parts = [
+        item.get("title") or "",
+        item.get("note") or "",
+        item.get("description") or "",
+        item.get("place") or "",
+    ]
+    return " ".join(parts)
+
+
+def is_related_candidate(item: dict[str, Any]) -> bool:
+    text = related_match_text(item)
+    return any(kw in text for kw in RELATED_KEYWORDS)
+
+
+def split_related(items: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """Split scraped items into related candidates vs remainder (preserve order)."""
+    related: list[dict[str, Any]] = []
+    rest: list[dict[str, Any]] = []
+    for it in items:
+        if is_related_candidate(it):
+            related.append(it)
+        else:
+            rest.append(it)
+    return related, rest
+
+
+def norm_url(url: str | None) -> str:
+    if not url:
+        return ""
+    return url.strip().rstrip("/").lower()
+
+
+def norm_title(title: str | None) -> str:
+    if not title:
+        return ""
+    return " ".join(title.strip().split())
+
+
+def titles_overlap(a: str, b: str) -> bool:
+    """True if one normalized title contains the other (avoid みらいトーク dupes)."""
+    if not a or not b:
+        return False
+    if a == b:
+        return True
+    shorter, longer = (a, b) if len(a) <= len(b) else (b, a)
+    # Require a meaningful overlap length to avoid tiny false positives
+    return len(shorter) >= 8 and shorter in longer
+
+
+def as_related_item(item: dict[str, Any]) -> dict[str, Any]:
+    """Retag a city/pref scrape item for the related section (HTML-friendly)."""
+    clean = {k: v for k, v in item.items() if not str(k).startswith("_")}
+    orig_tag = clean.get("tag") or ""
+    clean["tag"] = RELATED_TAG
+    if not clean.get("details"):
+        details: list[str] = []
+        if clean.get("dateText"):
+            details.append(f"日時：{clean['dateText']}")
+        if clean.get("place"):
+            details.append(f"場所：{clean['place']}")
+        if details:
+            clean["details"] = details
+    if not clean.get("sources") and clean.get("url"):
+        url = clean["url"]
+        if orig_tag == "滋賀県" or "pref.shiga.lg.jp" in url:
+            label = "滋賀県"
+        else:
+            label = "湖南市"
+        clean["sources"] = [{"label": label, "url": url}]
+    return clean
+
+
+def merge_related(
+    curated: list[dict[str, Any]],
+    auto_candidates: list[dict[str, Any]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]]]:
+    """
+    Curated first, then up to MAX_RELATED_AUTO scraped items.
+    Deduplicate by URL and overlapping title. Returns (merged, newly_added).
+    """
+    merged: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    seen_titles: list[str] = []
+
+    def remember(it: dict[str, Any]) -> None:
+        u = norm_url(it.get("url"))
+        if u:
+            seen_urls.add(u)
+        t = norm_title(it.get("title"))
+        if t:
+            seen_titles.append(t)
+
+    def is_dup(it: dict[str, Any]) -> bool:
+        u = norm_url(it.get("url"))
+        if u and u in seen_urls:
+            return True
+        t = norm_title(it.get("title"))
+        if t and any(titles_overlap(t, prev) for prev in seen_titles):
+            return True
+        return False
+
+    for it in curated:
+        merged.append(it)
+        remember(it)
+
+    # Prefer items with a concrete event day, then earlier datetime
+    def auto_sort_key(it: dict[str, Any]) -> tuple:
+        d = live.parse_iso_date(it.get("datetime"))
+        has_day = 0 if it.get("_has_event_day") or (d and not it.get("note")) else 1
+        return (has_day, d.isoformat() if d else "9999-99-99", norm_title(it.get("title")))
+
+    newly: list[dict[str, Any]] = []
+    for it in sorted(auto_candidates, key=auto_sort_key):
+        if is_dup(it):
+            continue
+        converted = as_related_item(it)
+        newly.append(converted)
+        merged.append(converted)
+        remember(converted)
+        if len(newly) >= MAX_RELATED_AUTO:
+            break
+    return merged, newly
+
+
 def esc(s: str) -> str:
     return html_lib.escape(s, quote=True)
 
@@ -359,7 +506,15 @@ def main() -> int:
     else:
         log.warning("city event_search fetch failed")
 
-    city = live.select_city_events(scraped_city) if scraped_city else load_fallback_city()
+    related_from_city, city_rest = split_related(scraped_city) if scraped_city else ([], [])
+    if related_from_city:
+        log.info("city → related candidates: %d", len(related_from_city))
+    city = live.select_city_events(city_rest) if city_rest else (
+        [] if scraped_city else load_fallback_city()
+    )
+    # If we used fallback (no scrape), still peel related keywords out of city list.
+    if not scraped_city and city:
+        related_from_city, city = split_related(city)
 
     # --- prefecture ---
     scraped_pref: list[dict[str, Any]] = []
@@ -370,19 +525,32 @@ def main() -> int:
     else:
         log.warning("pref event page fetch failed")
 
-    prefecture = select_pref_events(scraped_pref) if scraped_pref else []
-    if not prefecture and EVENTS_JSON.exists():
+    related_from_pref, pref_rest = split_related(scraped_pref) if scraped_pref else ([], [])
+    if related_from_pref:
+        log.info("pref → related candidates: %d", len(related_from_pref))
+    prefecture = select_pref_events(pref_rest) if pref_rest else []
+    if not prefecture and not scraped_pref and EVENTS_JSON.exists():
         try:
             prev = json.loads(EVENTS_JSON.read_text(encoding="utf-8"))
             prefecture = prev.get("sections", {}).get("prefecture") or []
             if prefecture:
+                related_from_pref, prefecture = split_related(prefecture)
                 log.warning("keeping previous draft prefecture (%d)", len(prefecture))
         except Exception:
             pass
 
+    auto_related = related_from_city + related_from_pref
+    related, newly_related = merge_related(curated.get("related", []), auto_related)
+    if newly_related:
+        for it in newly_related:
+            log.info("  related auto: %s", it.get("title"))
+    else:
+        log.info("related auto: none new (curated=%d, candidates=%d)",
+                 len(curated.get("related", [])), len(auto_related))
+
     sections = {
         "council": curated.get("council", []),
-        "related": curated.get("related", []),
+        "related": related,
         "prefecture": prefecture,
         "city": city,
     }
@@ -399,11 +567,12 @@ def main() -> int:
         return 1
 
     log.info(
-        "done (draft only): council=%d related=%d prefecture=%d city=%d",
+        "done (draft only): council=%d related=%d prefecture=%d city=%d (related auto moved=%d)",
         len(sections["council"]),
         len(sections["related"]),
         len(sections["prefecture"]),
         len(sections["city"]),
+        len(newly_related),
     )
     for it in sections["prefecture"][:5]:
         log.info("  pref sample: %s", it.get("title"))
