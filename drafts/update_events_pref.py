@@ -163,8 +163,7 @@ def scrape_prefecture(html: str) -> list[dict[str, Any]]:
         log.warning("no table.release_tbl found on pref event page")
         return []
 
-    # Archive page includes old years; drop stale press without a clear future event day.
-    stale_list_cutoff = TODAY - timedelta(days=35)
+    # Archive page includes old years; past items are dropped below.
 
     items: list[dict[str, Any]] = []
     for tr in tbl.select("tr"):
@@ -204,13 +203,15 @@ def scrape_prefecture(html: str) -> list[dict[str, Any]]:
             if event_date is None:
                 event_date = parse_event_date_from_title(title, list_year=list_year)
 
-        # Skip clearly past *event* dates when parseable from the title.
+        # Skip past event days when parseable from the title.
         if event_date and event_date < TODAY:
             continue
 
-        # No event day in title: keep only relatively fresh press releases.
-        if event_date is None and list_date and list_date < stale_list_cutoff:
-            continue
+        # No event day in title: only keep press dated today or later
+        # (過去の掲載は載せない。催し日不明の古いプレスは捨てる).
+        if event_date is None:
+            if not list_date or list_date < TODAY:
+                continue
 
         # dateText: prefer event day in title; else press-list date
         if event_date:
@@ -239,6 +240,7 @@ def scrape_prefecture(html: str) -> list[dict[str, Any]]:
         if event_date:
             item["datetime"] = event_date.isoformat()
         elif list_date:
+            # list date is today+ only (filtered above); still mark as 掲載日
             item["datetime"] = list_date.isoformat()
             item["note"] = "掲載日（催し日は案内をご確認ください）"
 
@@ -548,11 +550,21 @@ def main() -> int:
         log.info("related auto: none new (curated=%d, candidates=%d)",
                  len(curated.get("related", [])), len(auto_related))
 
+    def drop_past(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        kept = []
+        for it in items:
+            d = live.parse_iso_date(it.get("datetime"))
+            if d is not None and d < TODAY:
+                log.info("drop past: %s (%s)", it.get("title"), d)
+                continue
+            kept.append(it)
+        return kept
+
     sections = {
-        "council": curated.get("council", []),
-        "related": related,
-        "prefecture": prefecture,
-        "city": city,
+        "council": drop_past(curated.get("council", [])),
+        "related": drop_past(related),
+        "prefecture": drop_past(prefecture),
+        "city": drop_past(city),
     }
 
     if not any(sections.values()):
