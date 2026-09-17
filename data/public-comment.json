@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-17",
+  "fetched_at": "2026-09-18",
   "sources": [
     {
       "name": "湖南市 パブリックコメント（公式一覧）",
@@ -12,58 +12,12 @@
   ],
   "items": [
     {
-      "id": "konan-5th-administrative-reform",
-      "title": "第五次湖南市行政改革大綱（案）",
-      "org": "湖南市",
-      "status": "closed",
-      "period": "2025-12-08～2026-01-07",
-      "url": "https://www.city.shiga-konan.lg.jp/soshiki/somu/zaisei/39549.html",
-      "note": "持続可能な行政運営と効率的で質の高い行政サービスを目指す大綱案。2名から15件の意見。"
-    },
-    {
-      "id": "konan-seismic-retrofit-plan",
-      "title": "湖南市建築物耐震改修促進計画（案）",
-      "org": "湖南市",
-      "status": "closed",
-      "period": "2026-01-05～2026-02-05",
-      "url": "https://www.city.shiga-konan.lg.jp/soshiki/kensetsu_keizai/jyuutaku/public/38062.html",
-      "note": "既存建築物の耐震診断・改修を促進する計画案。1名1件、原案に反映しない意見1件。"
-    },
-    {
-      "id": "konan-vacant-house-plan",
-      "title": "湖南市空家等対策計画（案）",
-      "org": "湖南市",
-      "status": "closed",
-      "period": "2026-01-05～2026-02-05",
-      "url": "https://www.city.shiga-konan.lg.jp/soshiki/kensetsu_keizai/jyuutaku/public/38061.html",
-      "note": "空家等の利活用、生活環境保全、まちづくり活動の活性化等をまとめる計画案。1名4件。"
-    },
-    {
-      "id": "konan-city-planning-master-plan-3",
-      "title": "湖南市都市計画マスタープラン 第3版（案）",
-      "org": "湖南市",
-      "status": "closed",
-      "period": "2026-06-15～2026-07-06",
-      "url": "https://www.city.shiga-konan.lg.jp/soshiki/kensetsu_keizai/toshi_seisaku/3_2/40566.html",
-      "note": "今後10年先の都市づくり方針を示す基本計画案。9名24件の意見、4件を原案に反映。"
-    },
-    {
-      "id": "shiga-12th-traffic-safety-plan",
-      "title": "第12次滋賀県交通安全計画（素案）",
+      "id": "shiga-road-decarbonization-plan",
+      "title": "滋賀県道路脱炭素化推進計画（素案）",
       "org": "滋賀県",
       "status": "closed",
-      "period": "2026-03-30～2026-04-30",
-      "url": "https://www.pref.shiga.lg.jp/ha08/press-release/32795.html",
-      "note": "募集結果・確定計画を公表済み。県民政策コメントは4者から延べ18件。"
-    },
-    {
-      "id": "shiga-tax-specific-personal-information-assessment",
-      "title": "県税賦課徴収事務の特定個人情報保護評価書（案）",
-      "org": "滋賀県",
-      "status": "closed",
-      "period": "2026-07-01～2026-07-31",
-      "url": "https://www.pref.shiga.lg.jp/ippan/kurashi/zeikin/351366.html",
-      "note": "県税賦課徴収事務の特定個人情報ファイルに係る評価書案への意見募集。"
+      "period": "2026-08-06～2026-09-07",
+      "url": "https://www.pref.shiga.lg.jp/ha03/32258.html"
     },
     {
       "id": "shiga-disability-equality-ordinance-amendment",
@@ -71,17 +25,76 @@
       "org": "滋賀県",
       "status": "closed",
       "period": "2026-08-06～2026-09-05",
-      "url": "https://www.pref.shiga.lg.jp/ippan/kenkouiryouhukushi/syougaifukushi/351865.html",
-      "note": "条例見直し検討部会の答申を踏まえた改正条例案。"
+      "url": "https://www.pref.shiga.lg.jp/bj00/10105.html"
     },
     {
-      "id": "shiga-road-decarbonization-plan",
-      "title": "滋賀県道路脱炭素化推進計画（素案）",
+      "id": "shiga-tax-specific-personal-information-assessment",
+      "title": "県税賦課徴収事務の特定個人情報保護評価書（案）",
       "org": "滋賀県",
       "status": "closed",
-      "period": "2026-08-06～2026-09-07",
-      "url": "https://www.pref.shiga.lg.jp/ippan/kendoseibi/douro/351813.html",
-      "note": "道路法改正と国の基本方針を踏まえ、道路分野の脱炭素化の取組・整備指標を具体化する計画案。"
+      "period": "2026-07-01～2026-07-31",
+      "url": "https://www.pref.shiga.lg.jp/bg00/32260.html"
+    },
+    {
+      "id": "konan-city-planning-master-plan-3",
+      "title": "湖南市都市計画マスタープラン 第3版（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2026-06-15～2026-07-06",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r8/40567.html",
+      "note": "9人（24件）"
+    },
+    {
+      "id": "shiga-12th-traffic-safety-plan",
+      "title": "第12次滋賀県交通安全計画（素案）",
+      "org": "滋賀県",
+      "status": "closed",
+      "period": "2026-03-30～2026-04-30",
+      "url": "https://www.pref.shiga.lg.jp/bj00/10105.html"
+    },
+    {
+      "id": "konan-vacant-house-plan",
+      "title": "湖南市空家等対策計画（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2026-01-05～2026-02-05",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r7/38072.html",
+      "note": "1人（4件）"
+    },
+    {
+      "id": "konan-seismic-retrofit-plan",
+      "title": "湖南市建築物耐震改修促進計画（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2026-01-05～2026-02-05",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r7/38074.html",
+      "note": "1人（1件）"
+    },
+    {
+      "id": "konan-ff63a3b45b",
+      "title": "第4次湖南市子ども読書活動推進計画～湖南市「読書の魅力」種まきプラン～（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2025-12-24～2026-01-23",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r7/38844.html",
+      "note": "1人（3件）"
+    },
+    {
+      "id": "konan-5th-administrative-reform",
+      "title": "第五次湖南市行政改革大綱（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2025-12-08～2026-01-07",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r7/38781.html",
+      "note": "2人（15件）"
+    },
+    {
+      "id": "konan-f6c8ae8f00",
+      "title": "第三次湖南市総合計画（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2025-08-22～2025-09-22",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r7/38121.html"
     }
   ]
 }
