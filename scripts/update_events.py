@@ -31,7 +31,7 @@ USER_AGENT = (
 EVENT_SEARCH_URL = "https://www.city.shiga-konan.lg.jp/event_search.html"
 CALENDAR_URL = "https://www.city.shiga-konan.lg.jp/calendar.html"
 
-PREF_EVENT_URL = "https://www.pref.shiga.lg.jp/kensei/koho/e-shinbun/event/index.html"
+PREF_EVENT_URL = "https://www.pref.shiga.lg.jp/menu/32769.html"  # イベント情報（新着）
 PREF_BASE = "https://www.pref.shiga.lg.jp"
 
 MAX_PREF_EVENTS = 12
@@ -347,7 +347,7 @@ def parse_list_date(text: str) -> date | None:
 
 
 def scrape_prefecture(html: str) -> list[dict[str, Any]]:
-    """Parse Shiga's event press list and retain current/upcoming public events."""
+    """Parse Shiga's 新着イベント情報 list and retain current/upcoming public events."""
     soup = BeautifulSoup(html, "html.parser")
     table = soup.select_one("table.release_tbl")
     if not table:

@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-16T19:26:50Z",
+  "updatedAt": "2026-09-18T11:00:26Z",
   "sections": {
     "council": [
       {
@@ -25,10 +25,26 @@
     ],
     "prefecture": [
       {
-        "title": "【参加者募集】／令和8年度第3回G-NETほっとセミナーのお知らせ（10月24日（土曜日）開催）",
-        "dateText": "10月24日（土曜日）",
-        "datetime": "2026-10-24",
-        "url": "https://www.pref.shiga.lg.jp/fg30/press-release/32561.html",
+        "title": "伝統的工芸品等全国巡回展示販売会「しがのいいもの、旅する工芸」仙台会場で9月23日(水曜日・祝日)～27日(日曜日)開催！",
+        "dateText": "9月23日（水曜日・祝日）",
+        "datetime": "2026-09-23",
+        "url": "https://www.pref.shiga.lg.jp/fd00/press-release/33484.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "「令和8年度第1回マンション管理基礎セミナー」を開催します！",
+        "dateText": "2026年9月18日",
+        "datetime": "2026-09-18",
+        "url": "https://www.pref.shiga.lg.jp/rc00/press-release/33146.html",
+        "note": "掲載日（催し日は案内をご確認ください）",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "経営にAIを活かす第一歩 製造業の未来を拓くAI活用セミナーを開催します！",
+        "dateText": "2026年9月18日",
+        "datetime": "2026-09-18",
+        "url": "https://www.pref.shiga.lg.jp/fd00/press-release/33521.html",
+        "note": "掲載日（催し日は案内をご確認ください）",
         "tag": "滋賀県"
       },
       {
@@ -39,10 +55,19 @@
         "tag": "滋賀県"
       },
       {
-        "title": "9月は「認知症月間」、9月21日は「認知症の日」です！",
-        "dateText": "9月21日",
-        "datetime": "2026-09-21",
-        "url": "https://www.pref.shiga.lg.jp/ed00/press-release/32549.html",
+        "title": "シンポジウム「感染症と共に生きる社会  ～不確実な状況のなかでどう判断し、どう伝えるか～",
+        "dateText": "2026年9月18日",
+        "datetime": "2026-09-18",
+        "url": "https://www.pref.shiga.lg.jp/ej00/press-release/33351.html",
+        "note": "掲載日（催し日は案内をご確認ください）",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "第5回全国農泊ネットワーク滋賀・京都大会のご案内",
+        "dateText": "2026年9月18日",
+        "datetime": "2026-09-18",
+        "url": "https://www.pref.shiga.lg.jp/gh01/press-release/nouhakutaikai/33524.html",
+        "note": "掲載日（催し日は案内をご確認ください）",
         "tag": "滋賀県"
       }
     ],
@@ -108,33 +133,6 @@
         "tag": "市主催"
       },
       {
-        "title": "つどいの広場くまさんとくらぶ「英語であそぼう9月」（優愛保育園モンチ）",
-        "dateText": "09月17日(木曜日)",
-        "datetime": "2026-09-17",
-        "place": "菩提寺優愛保育園モンチ",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41332.html",
-        "note": "9月17日（木曜日）1部午前10時15分～10時45分 2部午前11時00分～11時30分",
-        "tag": "市主催"
-      },
-      {
-        "title": "子育てリフレッシュタイム（9月17日開催分）",
-        "dateText": "09月17日(木曜日)ほか",
-        "datetime": "2026-09-17",
-        "place": "柑子袋まちづくりセンター",
-        "url": "https://www.city.shiga-konan.lg.jp/life_scene/kosodate/kosodate_shien/37052.html",
-        "note": "令和8年9月17日 午前9時30分～正午",
-        "tag": "市主催"
-      },
-      {
-        "title": "湖南市女性の悩み相談（要予約）",
-        "dateText": "09月17日(木曜日)ほか",
-        "datetime": "2026-09-17",
-        "place": "サンライフ甲西（共同福祉施設）",
-        "url": "https://www.city.shiga-konan.lg.jp/shisei/jinken_danjo/danjo/32906.html",
-        "note": "月2回 火曜日・木曜日 14時30分～16時30分",
-        "tag": "市主催"
-      },
-      {
         "title": "「こあらっこ」子育て開放日",
         "dateText": "09月24日(木曜日)ほか",
         "datetime": "2026-09-24",
@@ -144,12 +142,38 @@
         "tag": "市主催"
       },
       {
+        "title": "ちっちゃなかぜおはなしかい",
+        "dateText": "09月24日(木曜日)",
+        "datetime": "2026-09-24",
+        "place": "石部子育て支援センターたんぽぽはうす",
+        "url": "https://www.city.shiga-konan.lg.jp/soshiki/kodomomirai/kodomokosodate/event/tanpopo/40703.html",
+        "note": "9月24日（木曜日）午前11時10分～11時30分",
+        "tag": "市主催"
+      },
+      {
         "title": "つどいの広場くまさんとくらぶ（しゃぼん玉遊び）優愛保育園モンチ",
         "dateText": "09月25日(金曜日)",
         "datetime": "2026-09-25",
         "place": "菩提寺優愛保育園モンチ",
         "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41319.html",
         "note": "9月25日（金曜日）午前10時00分～12時00分",
+        "tag": "市主催"
+      },
+      {
+        "title": "めだかのおへや",
+        "dateText": "09月28日(月曜日)",
+        "datetime": "2026-09-28",
+        "place": "岩根まちづくりセンター（和室）",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41334.html",
+        "note": "9月28日（月曜日）午前10時00分～午前11時30分",
+        "tag": "市主催"
+      },
+      {
+        "title": "安定型産業廃棄物最終処分場建設事業についての説明会",
+        "dateText": "10月02日(金曜日)",
+        "datetime": "2026-10-02",
+        "place": "市民学習交流センター（サンヒルズ甲西）",
+        "url": "https://www.city.shiga-konan.lg.jp/topics/41512.html",
         "tag": "市主催"
       }
     ]
