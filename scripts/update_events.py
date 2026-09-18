@@ -652,10 +652,24 @@ def select_pref_events(scraped: list[dict[str, Any]]) -> list[dict[str, Any]]:
             continue
         seen.add(item["title"])
         unique.append(item)
-    unique.sort(key=lambda item: (-score_pref_event(item), item.get("_sortDate") or "9999-99-99", item.get("title") or ""))
+    # Prefer stronger event candidates, then show by holding date ascending.
+    unique.sort(
+        key=lambda item: (
+            -score_pref_event(item),
+            item.get("_sortDate") or "9999-99-99",
+            item.get("title") or "",
+        )
+    )
+    picked = unique[:MAX_PREF_EVENTS]
+    picked.sort(
+        key=lambda item: (
+            item.get("_sortDate") or item.get("datetime") or "9999-99-99",
+            item.get("title") or "",
+        )
+    )
     return [
         {key: value for key, value in item.items() if not key.startswith("_")}
-        for item in unique[:MAX_PREF_EVENTS]
+        for item in picked
     ]
 
 
@@ -816,7 +830,15 @@ def select_city_events(scraped: list[dict[str, Any]]) -> list[dict[str, Any]]:
             x.get("title") or "",
         )
     )
-    return unique[:MAX_CITY_EVENTS]
+    picked = unique[:MAX_CITY_EVENTS]
+    # Display order: soonest holding date first.
+    picked.sort(
+        key=lambda x: (
+            x.get("datetime") or "9999-99-99",
+            x.get("title") or "",
+        )
+    )
+    return picked
 
 
 def curated_sections() -> dict[str, list[dict[str, Any]]]:
@@ -1066,11 +1088,20 @@ def main() -> int:
             kept.append(item)
         return kept
 
+    def by_holding_date(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+        return sorted(
+            items,
+            key=lambda item: (
+                item.get("datetime") or "9999-99-99",
+                item.get("title") or "",
+            ),
+        )
+
     sections = {
-        "council": drop_past(curated.get("council", [])),
-        "related": drop_past(related),
-        "prefecture": drop_past(prefecture),
-        "city": drop_past(city),
+        "council": by_holding_date(drop_past(curated.get("council", []))),
+        "related": by_holding_date(drop_past(related)),
+        "prefecture": by_holding_date(drop_past(prefecture)),
+        "city": by_holding_date(drop_past(city)),
     }
 
     if not any(sections.values()):
