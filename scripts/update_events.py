@@ -111,7 +111,7 @@ CURATED: dict[str, list[dict[str, Any]]] = {
             "tag": "重点",
             "priority": True,
             "details": [
-                "今後の予定：9月14日（月）決算常任委員会／9月18日（金）広報広聴常任委員会／9月25日（金）本会議・委員長報告・採決",
+                "今後の予定：9月25日（金）本会議・委員長報告・採決",
                 "開議：9:30〜",
                 "場所：湖南市役所東庁舎4階議場",
             ],
@@ -146,6 +146,17 @@ CURATED: dict[str, list[dict[str, Any]]] = {
                 },
             ],
             "description": "滋賀県・滋賀地域交通活性化協議会による、交通税・地域交通に関する県民対話です。",
+        },
+    ],
+    "city": [
+        {
+            "title": "澤田和華 トランペット・リサイタル",
+            "dateText": "09月27日(日曜日)",
+            "datetime": "2026-09-27",
+            "place": "湖南市甲西文化ホール",
+            "url": "https://www.city.shiga-konan.lg.jp/topics/40956.html",
+            "note": "開場13:30／開演14:00。湖南市教育委員会主催。",
+            "tag": "市主催",
         },
     ],
 }
@@ -795,6 +806,41 @@ def render_prefecture_html(items: list[dict[str, Any]]) -> str:
     return "".join(parts)
 
 
+def merge_city(curated: list[dict[str, Any]], scraped: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Keep curated city items, then fill with scraped (dedupe by url/title)."""
+    merged: list[dict[str, Any]] = []
+    seen_urls: set[str] = set()
+    seen_titles: list[str] = []
+
+    def remember(item: dict[str, Any]) -> None:
+        url = norm_url(item.get("url"))
+        title = norm_title(item.get("title"))
+        if url:
+            seen_urls.add(url)
+        if title:
+            seen_titles.append(title)
+
+    def duplicate(item: dict[str, Any]) -> bool:
+        url = norm_url(item.get("url"))
+        title = norm_title(item.get("title"))
+        return (bool(url) and url in seen_urls) or (
+            bool(title) and any(titles_overlap(title, old) for old in seen_titles)
+        )
+
+    for item in curated:
+        merged.append(item)
+        remember(item)
+
+    for item in scraped:
+        if duplicate(item):
+            continue
+        merged.append(item)
+        remember(item)
+        if len(merged) >= MAX_CITY_EVENTS:
+            break
+    return merged
+
+
 def score_city_event(item: dict[str, Any]) -> int:
     title = item.get("title") or ""
     score = 0
@@ -1048,6 +1094,8 @@ def main() -> int:
         previous_city = existing.get("sections", {}).get("city") or []
         related_from_city, city = split_related(previous_city)
         log.warning("keeping previous city (%d items)", len(city))
+
+    city = merge_city(curated.get("city", []), city)
 
     # Optional calendar fetch (cross-check / logging only).
     calendar_html = fetch(CALENDAR_URL)

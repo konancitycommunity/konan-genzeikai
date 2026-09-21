@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-21T00:03:59Z",
+  "updatedAt": "2026-09-21T00:15:39Z",
   "sections": {
     "council": [
       {
@@ -139,6 +139,15 @@
         "tag": "市主催"
       },
       {
+        "title": "澤田和華 トランペット・リサイタル",
+        "dateText": "09月27日(日曜日)",
+        "datetime": "2026-09-27",
+        "place": "湖南市甲西文化ホール",
+        "url": "https://www.city.shiga-konan.lg.jp/topics/40956.html",
+        "note": "開場13:30／開演14:00。湖南市教育委員会主催。",
+        "tag": "市主催"
+      },
+      {
         "title": "めだかのおへや",
         "dateText": "09月28日(月曜日)",
         "datetime": "2026-09-28",
@@ -204,15 +213,6 @@
         "place": "みくも地域人権福祉市民交流センター",
         "url": "https://www.city.shiga-konan.lg.jp/boshu/41536.html",
         "note": "令和8年10月26日（月曜日）午後7時から午後8時30分まで",
-        "tag": "市主催"
-      },
-      {
-        "title": "10月30日開催 第4回「湖南市人権講座～新たな気づきの90分～」",
-        "dateText": "10月30日(金曜日)",
-        "datetime": "2026-10-30",
-        "place": "みくも地域人権福祉市民交流センター",
-        "url": "https://www.city.shiga-konan.lg.jp/boshu/41539.html",
-        "note": "令和8年10月30日（金曜日）午後7時から午後8時30分まで",
         "tag": "市主催"
       }
     ]
