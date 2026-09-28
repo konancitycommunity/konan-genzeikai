@@ -1,17 +1,7 @@
 {
-  "updatedAt": "2026-09-21T00:15:39Z",
+  "updatedAt": "2026-09-28T00:04:36Z",
   "sections": {
-    "council": [
-      {
-        "title": "令和8年9月湖南市議会定例会",
-        "dateText": "会期 2026-08-27〜09-25",
-        "datetime": "2026-09-25",
-        "place": "湖南市役所東庁舎4階議場",
-        "url": "https://www.city.shiga-konan.lg.jp/soshiki/gikai_jimukyoku/giji/4/reiwa6nenteireikai_6/9gatur2_1/38943.html",
-        "note": "ネット中継あり",
-        "tag": "重点"
-      }
-    ],
+    "council": [],
     "related": [
       {
         "title": "SHIGAみらいトーク in 湖南市",
@@ -21,35 +11,29 @@
         "url": "https://www.city.shiga-konan.lg.jp/topics/41482.html",
         "note": "中高生・大学生対象の枠組みに注意（市案内を確認）。",
         "tag": "関連（交通・税）"
+      },
+      {
+        "title": "～歴史的街道景観まちづくり～御代参街道タウンミーティング開催のお知らせ",
+        "dateText": "10月30日（金曜日）13:30〜",
+        "datetime": "2026-10-30",
+        "url": "https://www.pref.shiga.lg.jp/ra00/press-release/33373.html",
+        "tag": "関連（交通・税）"
       }
     ],
     "prefecture": [
-      {
-        "title": "ボートレースびわこ初のアイスイベント「Biwakoアイスフェスタ2026」開催決定！ 全国から47種類以上のご当地アイスがボートレースびわこに大集合！",
-        "dateText": "9月22日（火・祝）",
-        "datetime": "2026-09-22",
-        "url": "https://www.pref.shiga.lg.jp/nc00/press-release/33216.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "伝統的工芸品等全国巡回展示販売会「しがのいいもの、旅する工芸」仙台会場で9月23日(水曜日・祝日)～27日(日曜日)開催！",
-        "dateText": "9月23日（水曜日・祝日）",
-        "datetime": "2026-09-23",
-        "url": "https://www.pref.shiga.lg.jp/fd00/press-release/33484.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "“滋賀の発酵”の魅力に触れるスペシャルイベント～アル・プラザ栗東にて「かもすここく」発酵マルシェを開催～",
-        "dateText": "9月27日（日曜日）10:00〜",
-        "datetime": "2026-09-27",
-        "url": "https://www.pref.shiga.lg.jp/fa00/press-release/33119.html",
-        "tag": "滋賀県"
-      },
       {
         "title": "「中堅・中小企業×スタートアップ共創チャレンジ事業」機運醸成セミナーを開催します！",
         "dateText": "9月28日（月曜日）14:30〜",
         "datetime": "2026-09-28",
         "url": "https://www.pref.shiga.lg.jp/fd00/press-release/33274.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "滋賀県が舞台となったオリジナルTVアニメ「さよならララ」特別展示を開催！",
+        "dateText": "9月30日（水曜日）",
+        "datetime": "2026-09-30",
+        "url": "https://www.pref.shiga.lg.jp/sa00/press-release/33130.html",
+        "note": "開催期間：9月30日〜10月6日",
         "tag": "滋賀県"
       },
       {
@@ -89,10 +73,31 @@
         "tag": "滋賀県"
       },
       {
+        "title": "【彦根市】しが結出張登録会を開催します！",
+        "dateText": "10月17日（土曜日）",
+        "datetime": "2026-10-17",
+        "url": "https://www.pref.shiga.lg.jp/ja00/press-release/33500.html",
+        "tag": "滋賀県"
+      },
+      {
         "title": "「令和8年度第1回マンション管理基礎セミナー」を開催します！",
         "dateText": "10月18日（日曜日）13:00〜",
         "datetime": "2026-10-18",
         "url": "https://www.pref.shiga.lg.jp/rc00/press-release/33146.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "【野洲市】しが結出張登録会を開催します！",
+        "dateText": "10月18日（日曜日）",
+        "datetime": "2026-10-18",
+        "url": "https://www.pref.shiga.lg.jp/ja00/press-release/33501.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "豊臣4days in 北近江 【day3】出演者決定！観覧募集を行います",
+        "dateText": "11月2日（月曜日）15:00〜",
+        "datetime": "2026-11-02",
+        "url": "https://www.pref.shiga.lg.jp/sa00/press-release/33470.html",
         "tag": "滋賀県"
       },
       {
@@ -101,52 +106,9 @@
         "datetime": "2026-11-04",
         "url": "https://www.pref.shiga.lg.jp/cg00/press-release/33111.html",
         "tag": "滋賀県"
-      },
-      {
-        "title": "「令和8年度働く女性のハッピー・キャリアセミナー」を開催します！",
-        "dateText": "11月5日（木曜日）09:00〜",
-        "datetime": "2026-11-05",
-        "url": "https://www.pref.shiga.lg.jp/fg00/press-release/32529.html",
-        "tag": "滋賀県"
       }
     ],
     "city": [
-      {
-        "title": "「こあらっこ」子育て開放日",
-        "dateText": "09月24日(木曜日)ほか",
-        "datetime": "2026-09-24",
-        "place": "石部南まちづくりセンター大会議室",
-        "url": "https://www.city.shiga-konan.lg.jp/soshiki/sogo_seisaku/chiiki_sosei/3/matidukuri/ibento/30890.html",
-        "note": "第四木曜日開催（年間12回）午前10時から午後3時まで",
-        "tag": "市主催"
-      },
-      {
-        "title": "ちっちゃなかぜおはなしかい",
-        "dateText": "09月24日(木曜日)",
-        "datetime": "2026-09-24",
-        "place": "石部子育て支援センターたんぽぽはうす",
-        "url": "https://www.city.shiga-konan.lg.jp/soshiki/kodomomirai/kodomokosodate/event/tanpopo/40703.html",
-        "note": "9月24日（木曜日）午前11時10分～11時30分",
-        "tag": "市主催"
-      },
-      {
-        "title": "つどいの広場くまさんとくらぶ（しゃぼん玉遊び）優愛保育園モンチ",
-        "dateText": "09月25日(金曜日)",
-        "datetime": "2026-09-25",
-        "place": "菩提寺優愛保育園モンチ",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41319.html",
-        "note": "9月25日（金曜日）午前10時00分～12時00分",
-        "tag": "市主催"
-      },
-      {
-        "title": "澤田和華 トランペット・リサイタル",
-        "dateText": "09月27日(日曜日)",
-        "datetime": "2026-09-27",
-        "place": "湖南市甲西文化ホール",
-        "url": "https://www.city.shiga-konan.lg.jp/topics/40956.html",
-        "note": "開場13:30／開演14:00。湖南市教育委員会主催。",
-        "tag": "市主催"
-      },
       {
         "title": "めだかのおへや",
         "dateText": "09月28日(月曜日)",
@@ -162,6 +124,33 @@
         "datetime": "2026-10-02",
         "place": "市民学習交流センター（サンヒルズ甲西）",
         "url": "https://www.city.shiga-konan.lg.jp/topics/41512.html",
+        "tag": "市主催"
+      },
+      {
+        "title": "ちっちゃなかぜおはなしかい",
+        "dateText": "10月05日(月曜日)",
+        "datetime": "2026-10-05",
+        "place": "子育て支援センターひまわり",
+        "url": "https://www.city.shiga-konan.lg.jp/soshiki/kodomomirai/kodomokosodate/event/himwari/37856.html",
+        "note": "10月5日（月曜日）午前11時10分～11時30分",
+        "tag": "市主催"
+      },
+      {
+        "title": "スマイル相談日（保健師さん栄養士さんとお話できます）",
+        "dateText": "10月06日(火曜日)",
+        "datetime": "2026-10-06",
+        "place": "石部子育て支援センターたんぽぽはうす",
+        "url": "https://www.city.shiga-konan.lg.jp/event/27343.html",
+        "note": "10月6日（火曜日）午前10時～11時30分(受付10時～11時）",
+        "tag": "市主催"
+      },
+      {
+        "title": "湖南市女性の悩み相談（要予約）",
+        "dateText": "10月06日(火曜日)ほか",
+        "datetime": "2026-10-06",
+        "place": "サンライフ甲西（共同福祉施設）",
+        "url": "https://www.city.shiga-konan.lg.jp/shisei/jinken_danjo/danjo/32906.html",
+        "note": "月2回 火曜日・木曜日 14時30分～16時30分",
         "tag": "市主催"
       },
       {
@@ -213,6 +202,15 @@
         "place": "みくも地域人権福祉市民交流センター",
         "url": "https://www.city.shiga-konan.lg.jp/boshu/41536.html",
         "note": "令和8年10月26日（月曜日）午後7時から午後8時30分まで",
+        "tag": "市主催"
+      },
+      {
+        "title": "10月30日開催 第4回「湖南市人権講座～新たな気づきの90分～」",
+        "dateText": "10月30日(金曜日)",
+        "datetime": "2026-10-30",
+        "place": "みくも地域人権福祉市民交流センター",
+        "url": "https://www.city.shiga-konan.lg.jp/boshu/41539.html",
+        "note": "令和8年10月30日（金曜日）午後7時から午後8時30分まで",
         "tag": "市主催"
       }
     ]
