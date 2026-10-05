@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-28",
+  "fetched_at": "2026-10-05",
   "sources": [
     {
       "name": "湖南市 パブリックコメント（公式一覧）",
@@ -51,6 +51,15 @@
       "status": "closed",
       "period": "2026-03-30～2026-04-30",
       "url": "https://www.pref.shiga.lg.jp/bj00/10105.html"
+    },
+    {
+      "id": "konan-85143c32db",
+      "title": "湖南市文化財保存活用地域計画（案）",
+      "org": "湖南市",
+      "status": "closed",
+      "period": "2026-04-15",
+      "url": "https://www.city.shiga-konan.lg.jp/shisei/kocho/paburikku_komento/r8/40209.html",
+      "note": "2人（15件）"
     },
     {
       "id": "konan-vacant-house-plan",
