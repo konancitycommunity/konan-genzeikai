@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-19",
+  "fetched_at": "2026-10-26",
   "sources": [
     {
       "name": "湖南市 パブリックコメント（公式一覧）",
@@ -11,6 +11,22 @@
     }
   ],
   "items": [
+    {
+      "id": "shiga-d7edfeecaa",
+      "title": "意見・情報の募集期間",
+      "org": "滋賀県",
+      "status": "open",
+      "period": "2026-10-23～2026-11-22",
+      "url": "https://www.pref.shiga.lg.jp/bj00/10105.html"
+    },
+    {
+      "id": "shiga-633580a0e7",
+      "title": "問い合わせ先",
+      "org": "滋賀県",
+      "status": "open",
+      "period": "総務部行政経営推進課077-528-3290",
+      "url": "https://www.pref.shiga.lg.jp/soshiki/14864.html"
+    },
     {
       "id": "shiga-road-decarbonization-plan",
       "title": "滋賀県道路脱炭素化推進計画（素案）",
