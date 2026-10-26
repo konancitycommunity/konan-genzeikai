@@ -1,49 +1,28 @@
 {
-  "updatedAt": "2026-10-19T02:16:38Z",
+  "updatedAt": "2026-10-26T00:06:58Z",
   "sections": {
     "council": [],
     "related": [],
     "prefecture": [
       {
-        "title": "開催します！！『近江牛を食べて当てよう！キャンペーン』",
-        "dateText": "10月20日（火曜日）",
-        "datetime": "2026-10-20",
-        "url": "https://www.pref.shiga.lg.jp/ge00/press-release/34197.html",
+        "title": "10月26日「ワールドマスターズゲームズ2027関西」米原駅装飾お披露目セレモニーを開催します！",
+        "dateText": "10月26日",
+        "datetime": "2026-10-26",
+        "url": "https://www.pref.shiga.lg.jp/se00/press-release/34324.html",
         "tag": "滋賀県"
       },
       {
-        "title": "伝統的工芸品等全国巡回展示販売会「しがのいいもの、旅する工芸」名古屋会場で10月21日(水曜日)～25日(日曜日)開催！",
-        "dateText": "10月21日（水曜日）",
-        "datetime": "2026-10-21",
-        "url": "https://www.pref.shiga.lg.jp/fd00/press-release/34168.html",
+        "title": "企業の「魅力ある職場づくり」を支援します！～第3回セミナーのご案内～",
+        "dateText": "10月29日（木曜日）",
+        "datetime": "2026-10-29",
+        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/34389.html",
         "tag": "滋賀県"
       },
       {
-        "title": "「県内事業者の外国人材雇用の事例から学ぶ」外国人材雇用好事例共有セミナーを開催します！",
-        "dateText": "10月22日（木曜日）10:00〜",
-        "datetime": "2026-10-22",
-        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/33971.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "〈参加者募集中〉女性の起業家交流会 みんなのwell-beingのために！ 10月23日（金曜日）",
-        "dateText": "10月23日（金曜日）",
-        "datetime": "2026-10-23",
-        "url": "https://www.pref.shiga.lg.jp/fg30/press-release/34046.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "『北の近江AiR』クラウドファンディング開始＆オープンスタジオ・マルシェ開催！",
-        "dateText": "10月24日（土曜日）10:00〜",
-        "datetime": "2026-10-24",
-        "url": "https://www.pref.shiga.lg.jp/ca00/press-release/33869.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "奥びわ湖・山門水源の森現地交流会2026「豊かな自然を守り、未来へつなぐ 「新しい協働」のかたちを考え体験する2日間」を開催します！",
-        "dateText": "10月24日（土曜日）10:00〜",
-        "datetime": "2026-10-24",
-        "url": "https://www.pref.shiga.lg.jp/dj00/press-release/33530.html",
+        "title": "10月31日（土曜日）「滋賀もりづくりアカデミー」受講相談会＆ハーベスタシミュレータ体験（水源の森オータムフェスタとの連携イベント）",
+        "dateText": "10月31日（土曜日）",
+        "datetime": "2026-10-31",
+        "url": "https://www.pref.shiga.lg.jp/dj02/press-release/34241.html",
         "tag": "滋賀県"
       },
       {
@@ -54,6 +33,27 @@
         "tag": "滋賀県"
       },
       {
+        "title": "保育のしごと　マッチングフェスタを開催します！",
+        "dateText": "11月1日（日曜日）12:30〜",
+        "datetime": "2026-11-01",
+        "url": "https://www.pref.shiga.lg.jp/jc00/34261.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "講座「地域活動の魅力」を開催します",
+        "dateText": "11月1日（日曜日）",
+        "datetime": "2026-11-01",
+        "url": "https://www.pref.shiga.lg.jp/de52/press-release/34259.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "奥びわスポーツの森 スケートボードパークの完成を記念して、「グランドオープンイベント」を開催します！",
+        "dateText": "11月3日（火曜日）",
+        "datetime": "2026-11-03",
+        "url": "https://www.pref.shiga.lg.jp/rb00/press-release/34285.html",
+        "tag": "滋賀県"
+      },
+      {
         "title": "電気自動車（EV）活用セミナーを開催します！",
         "dateText": "11月4日（水曜日）",
         "datetime": "2026-11-04",
@@ -61,17 +61,17 @@
         "tag": "滋賀県"
       },
       {
-        "title": "【11月5日、11月13日】びわ湖カーボンクレジット勉強会を開催します",
-        "dateText": "11月5日",
-        "datetime": "2026-11-05",
-        "url": "https://www.pref.shiga.lg.jp/cg00/press-release/33602.html",
-        "tag": "滋賀県"
-      },
-      {
         "title": "じんけんミニフェスタ＆しが多文化共生フェスタを開催します！",
         "dateText": "11月8日（日曜日）10:00〜",
         "datetime": "2026-11-08",
         "url": "https://www.pref.shiga.lg.jp/cf00/press-release/33758.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "【大津市】しが結主催婚活イベントを開催します！",
+        "dateText": "11月21日（土曜日）",
+        "datetime": "2026-11-21",
+        "url": "https://www.pref.shiga.lg.jp/ja00/press-release/34373.html",
         "tag": "滋賀県"
       },
       {
@@ -91,75 +91,21 @@
     ],
     "city": [
       {
-        "title": "園庭解放日（こども園SHION）",
-        "dateText": "10月19日(月曜日)",
-        "datetime": "2026-10-19",
-        "place": "こども園SHION",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41523.html",
-        "note": "10月19日（月曜日）午前10時00分～午前11時00分",
-        "tag": "市主催"
-      },
-      {
-        "title": "あいあいクラブ（阿星あかつき保育園）",
-        "dateText": "10月20日(火曜日)",
-        "datetime": "2026-10-20",
-        "place": "アグリパーク竜王",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41526.html",
-        "note": "10月20日(火曜日)午前10時～11時30分",
-        "tag": "市主催"
-      },
-      {
-        "title": "つどいの広場おおぞら（しゃぼん玉遊び）",
-        "dateText": "10月20日(火曜日)",
-        "datetime": "2026-10-20",
-        "place": "つどいの広場おおぞら",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41519.html",
-        "note": "10月20日（火曜日）午前10時30分から",
-        "tag": "市主催"
-      },
-      {
-        "title": "～出前講座～小児科の先生に聞いてみよう！",
-        "dateText": "10月20日(火曜日)",
-        "datetime": "2026-10-20",
-        "place": "子育て支援センター ひまわり",
-        "url": "https://www.city.shiga-konan.lg.jp/event/25163.html",
-        "note": "10月20日（火曜日）午前10時～11時",
-        "tag": "市主催"
-      },
-      {
-        "title": "つどいの広場くまさんとくらぶ（こぐまさんタイム）10月",
-        "dateText": "10月21日(水曜日)ほか",
-        "datetime": "2026-10-21",
-        "place": "菩提寺優愛保育園モンチ",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/40897.html",
-        "note": "10月7日(水曜日)・10月21日（水曜日）午前10時～12時",
-        "tag": "市主催"
-      },
-      {
-        "title": "「こあらっこ」子育て開放日",
-        "dateText": "10月22日(木曜日)ほか",
-        "datetime": "2026-10-22",
-        "place": "石部南まちづくりセンター大会議室",
-        "url": "https://www.city.shiga-konan.lg.jp/soshiki/sogo_seisaku/chiiki_sosei/3/matidukuri/ibento/30890.html",
-        "note": "第四木曜日開催（年間12回）午前10時から午後3時まで",
-        "tag": "市主催"
-      },
-      {
-        "title": "こなんっこ広場（産後ランチ）",
-        "dateText": "10月22日(木曜日)",
-        "datetime": "2026-10-22",
-        "place": "つどいの広場こなんっこ広場",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/40905.html",
-        "note": "10月22 日（木曜日）午前10時30分～",
-        "tag": "市主催"
-      },
-      {
         "title": "10月26日開催 第3回「湖南市人権講座～新たな気づきの90分～」",
         "dateText": "10月26日(月曜日)",
         "datetime": "2026-10-26",
         "place": "みくも地域人権福祉市民交流センター",
         "url": "https://www.city.shiga-konan.lg.jp/boshu/41536.html",
         "note": "令和8年10月26日（月曜日）午後7時から午後8時30分まで",
+        "tag": "市主催"
+      },
+      {
+        "title": "めだかのおへや(岩根まちづくりセンター)",
+        "dateText": "10月26日(月曜日)",
+        "datetime": "2026-10-26",
+        "place": "岩根まちづくりセンター",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/40893.html",
+        "note": "10月26日（月曜日）午前10時00分～午前11時30分",
         "tag": "市主催"
       },
       {
@@ -172,11 +118,65 @@
         "tag": "市主催"
       },
       {
+        "title": "つどいの広場くまさんとくらぶ「こぐまさんタイム」（優愛保育園モンチ）",
+        "dateText": "11月04日(水曜日)ほか",
+        "datetime": "2026-11-04",
+        "place": "菩提寺優愛保育園モンチ",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41061.html",
+        "note": "11月4日(水曜日)、11月18日(水曜日）いずれも午前10時から12時",
+        "tag": "市主催"
+      },
+      {
+        "title": "かんがる～広場（秋の製作・育児相談）",
+        "dateText": "11月09日(月曜日)",
+        "datetime": "2026-11-09",
+        "place": "こうせい駅前診療所横の生協ホール",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/40891.html",
+        "note": "11月9日（月曜日）午前10時00分～11時00分",
+        "tag": "市主催"
+      },
+      {
+        "title": "園庭解放日11月（こども園SHION）",
+        "dateText": "11月09日(月曜日)",
+        "datetime": "2026-11-09",
+        "place": "こども園SHION",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41813.html",
+        "note": "11月9日（月曜日）午前10時00分から11時00分",
+        "tag": "市主催"
+      },
+      {
         "title": "湖南市人権なんでも相談（予約不要）",
         "dateText": "11月09日(月曜日)ほか",
         "datetime": "2026-11-09",
         "place": "石部老人福祉センター・社会福祉センター",
         "url": "https://www.city.shiga-konan.lg.jp/kurashi/sodan/jinkensoudan/30634.html",
+        "tag": "市主催"
+      },
+      {
+        "title": "あいあいクラブ",
+        "dateText": "11月10日(火曜日)",
+        "datetime": "2026-11-10",
+        "place": "阿星あかつき保育園",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41057.html",
+        "note": "11月10日(火曜日)午前10時～午前11時30分",
+        "tag": "市主催"
+      },
+      {
+        "title": "湖南市女性の悩み相談（要予約）",
+        "dateText": "11月10日(火曜日)ほか",
+        "datetime": "2026-11-10",
+        "place": "サンライフ甲西（共同福祉施設）",
+        "url": "https://www.city.shiga-konan.lg.jp/shisei/jinken_danjo/danjo/32906.html",
+        "note": "月2回 火曜日・木曜日 14時30分～16時30分",
+        "tag": "市主催"
+      },
+      {
+        "title": "つどいの広場おおぞら（11月）",
+        "dateText": "11月13日(金曜日)",
+        "datetime": "2026-11-13",
+        "place": "つどいの広場おおぞら",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41072.html",
+        "note": "11月13日（金曜日）午前10時30分から",
         "tag": "市主催"
       },
       {
