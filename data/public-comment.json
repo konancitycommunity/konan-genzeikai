@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26",
+  "fetched_at": "2026-11-02",
   "sources": [
     {
       "name": "湖南市 パブリックコメント（公式一覧）",
@@ -34,14 +34,6 @@
       "status": "closed",
       "period": "2026-08-06～2026-09-07",
       "url": "https://www.pref.shiga.lg.jp/ha03/32258.html"
-    },
-    {
-      "id": "shiga-disability-equality-ordinance-amendment",
-      "title": "滋賀県障害者差別のない共生社会づくり条例の一部を改正する条例案",
-      "org": "滋賀県",
-      "status": "closed",
-      "period": "2026-08-06～2026-09-05",
-      "url": "https://www.pref.shiga.lg.jp/bj00/10105.html"
     },
     {
       "id": "shiga-tax-specific-personal-information-assessment",
