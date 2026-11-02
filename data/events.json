@@ -1,50 +1,21 @@
 {
-  "updatedAt": "2026-10-26T02:11:13Z",
+  "updatedAt": "2026-11-02T03:12:50Z",
   "sections": {
     "council": [],
     "related": [],
     "prefecture": [
       {
-        "title": "10月26日「ワールドマスターズゲームズ2027関西」米原駅装飾お披露目セレモニーを開催します！",
-        "dateText": "10月26日",
-        "datetime": "2026-10-26",
-        "url": "https://www.pref.shiga.lg.jp/se00/press-release/34324.html",
+        "title": "11月人材開発促進月間に技能式典・イベントを開催します！",
+        "dateText": "11月2日10:00〜",
+        "datetime": "2026-11-02",
+        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/34633.html",
         "tag": "滋賀県"
       },
       {
-        "title": "全国大会で競う技能の力！！『技能五輪・アビリンピック2026 滋賀県選手団結団式』を開催します。",
-        "dateText": "10月26日10:00〜",
-        "datetime": "2026-10-26",
-        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/34379.html",
-        "note": "開催期間：10月26日〜11月2日",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "10月31日（土曜日）「滋賀もりづくりアカデミー」受講相談会＆ハーベスタシミュレータ体験（水源の森オータムフェスタとの連携イベント）",
-        "dateText": "10月31日（土曜日）",
-        "datetime": "2026-10-31",
-        "url": "https://www.pref.shiga.lg.jp/dj02/press-release/34241.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "10月31日（土曜日）野洲市の滋賀県立近江富士花緑公園にて 森や木に親しむイベント「水源の森オータムフェスタ」を開催します",
-        "dateText": "10月31日（土曜日）",
-        "datetime": "2026-10-31",
-        "url": "https://www.pref.shiga.lg.jp/dj00/press-release/33715.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "保育のしごと　マッチングフェスタを開催します！",
-        "dateText": "11月1日（日曜日）12:30〜",
-        "datetime": "2026-11-01",
-        "url": "https://www.pref.shiga.lg.jp/jc00/34261.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "講座「地域活動の魅力」を開催します",
-        "dateText": "11月1日（日曜日）",
-        "datetime": "2026-11-01",
-        "url": "https://www.pref.shiga.lg.jp/de52/press-release/34259.html",
+        "title": "第2回小学生「かいご」の絵コンクール作品展を開催します！",
+        "dateText": "11月2日（月曜日）12:00〜",
+        "datetime": "2026-11-02",
+        "url": "https://www.pref.shiga.lg.jp/ed00/press-release/34602.html",
         "tag": "滋賀県"
       },
       {
@@ -55,10 +26,10 @@
         "tag": "滋賀県"
       },
       {
-        "title": "電気自動車（EV）活用セミナーを開催します！",
-        "dateText": "11月4日（水曜日）",
-        "datetime": "2026-11-04",
-        "url": "https://www.pref.shiga.lg.jp/cg00/press-release/33111.html",
+        "title": "新しい琵琶湖⽂化館開館1年前カウントダウンイベント～びわ湖のほとりで未来をえがこう～開催のご案内",
+        "dateText": "11月3日（火曜日）10:00〜",
+        "datetime": "2026-11-03",
+        "url": "https://www.pref.shiga.lg.jp/sd00/press-release/33476.html",
         "tag": "滋賀県"
       },
       {
@@ -66,6 +37,21 @@
         "dateText": "11月8日（日曜日）10:00〜",
         "datetime": "2026-11-08",
         "url": "https://www.pref.shiga.lg.jp/cf00/press-release/33758.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "地域交流イベント「オープンホスピタル」を開催します",
+        "dateText": "11月8日（日曜日）10:30〜",
+        "datetime": "2026-11-08",
+        "url": "https://www.pref.shiga.lg.jp/kensou/press-release/34669.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "合同企業説明会「WORKしが博」を開催します！",
+        "dateText": "11月11日（水曜日）13:30〜",
+        "datetime": "2026-11-11",
+        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/33880.html",
+        "note": "開催期間：11月11日〜14日",
         "tag": "滋賀県"
       },
       {
@@ -88,36 +74,23 @@
         "datetime": "2026-11-29",
         "url": "https://www.pref.shiga.lg.jp/fg30/press-release/34038.html",
         "tag": "滋賀県"
+      },
+      {
+        "title": "彦根市で彦根城世界遺産登録推進セミナーを開催します",
+        "dateText": "12月5日（土曜日）13:00〜",
+        "datetime": "2026-12-05",
+        "url": "https://www.pref.shiga.lg.jp/sd00/press-release/hikonejo/34406.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "【三つ星企業認証式も同時開催！】令和８年度 湖国のリーダーの会トップセミナー を開催します！",
+        "dateText": "1月14日（木曜日）14:00〜",
+        "datetime": "2027-01-14",
+        "url": "https://www.pref.shiga.lg.jp/fg00/press-release/34058.html",
+        "tag": "滋賀県"
       }
     ],
     "city": [
-      {
-        "title": "10月26日開催 第3回「湖南市人権講座～新たな気づきの90分～」",
-        "dateText": "10月26日(月曜日)",
-        "datetime": "2026-10-26",
-        "place": "みくも地域人権福祉市民交流センター",
-        "url": "https://www.city.shiga-konan.lg.jp/boshu/41536.html",
-        "note": "令和8年10月26日（月曜日）午後7時から午後8時30分まで",
-        "tag": "市主催"
-      },
-      {
-        "title": "めだかのおへや(岩根まちづくりセンター)",
-        "dateText": "10月26日(月曜日)",
-        "datetime": "2026-10-26",
-        "place": "岩根まちづくりセンター",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/40893.html",
-        "note": "10月26日（月曜日）午前10時00分～午前11時30分",
-        "tag": "市主催"
-      },
-      {
-        "title": "10月30日開催 第4回「湖南市人権講座～新たな気づきの90分～」",
-        "dateText": "10月30日(金曜日)",
-        "datetime": "2026-10-30",
-        "place": "みくも地域人権福祉市民交流センター",
-        "url": "https://www.city.shiga-konan.lg.jp/boshu/41539.html",
-        "note": "令和8年10月30日（金曜日）午後7時から午後8時30分まで",
-        "tag": "市主催"
-      },
       {
         "title": "つどいの広場くまさんとくらぶ「こぐまさんタイム」（優愛保育園モンチ）",
         "dateText": "11月04日(水曜日)ほか",
@@ -178,6 +151,32 @@
         "place": "つどいの広場おおぞら",
         "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41072.html",
         "note": "11月13日（金曜日）午前10時30分から",
+        "tag": "市主催"
+      },
+      {
+        "title": "つどいの広場くまさんとくらぶ（園庭開放）優愛保育園モンチ",
+        "dateText": "11月13日(金曜日)",
+        "datetime": "2026-11-13",
+        "place": "菩提寺優愛保育園モンチ",
+        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41319.html",
+        "note": "11月13日（金曜日）午前10時00分～12時00分",
+        "tag": "市主催"
+      },
+      {
+        "title": "菩提寺の見どころをめぐるウォーキングイベントを開催します！",
+        "dateText": "11月14日(土曜日)",
+        "datetime": "2026-11-14",
+        "place": "菩提寺運動広場出発(菩提寺小学校横)",
+        "url": "https://www.city.shiga-konan.lg.jp/event/41195.html",
+        "tag": "市主催"
+      },
+      {
+        "title": "22nd青春祭（あおはるさい）2026開催‼",
+        "dateText": "11月15日(日曜日)ほか",
+        "datetime": "2026-11-15",
+        "place": "石部文化ホール",
+        "url": "https://www.city.shiga-konan.lg.jp/topics/41953.html",
+        "note": "令和8年11月15日日曜日",
         "tag": "市主催"
       },
       {
