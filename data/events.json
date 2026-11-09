@@ -1,57 +1,29 @@
 {
-  "updatedAt": "2026-11-02T03:12:50Z",
+  "updatedAt": "2026-11-09T03:32:14Z",
   "sections": {
     "council": [],
     "related": [],
     "prefecture": [
-      {
-        "title": "11月人材開発促進月間に技能式典・イベントを開催します！",
-        "dateText": "11月2日10:00〜",
-        "datetime": "2026-11-02",
-        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/34633.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "第2回小学生「かいご」の絵コンクール作品展を開催します！",
-        "dateText": "11月2日（月曜日）12:00〜",
-        "datetime": "2026-11-02",
-        "url": "https://www.pref.shiga.lg.jp/ed00/press-release/34602.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "奥びわスポーツの森 スケートボードパークの完成を記念して、「グランドオープンイベント」を開催します！",
-        "dateText": "11月3日（火曜日）",
-        "datetime": "2026-11-03",
-        "url": "https://www.pref.shiga.lg.jp/rb00/press-release/34285.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "新しい琵琶湖⽂化館開館1年前カウントダウンイベント～びわ湖のほとりで未来をえがこう～開催のご案内",
-        "dateText": "11月3日（火曜日）10:00〜",
-        "datetime": "2026-11-03",
-        "url": "https://www.pref.shiga.lg.jp/sd00/press-release/33476.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "じんけんミニフェスタ＆しが多文化共生フェスタを開催します！",
-        "dateText": "11月8日（日曜日）10:00〜",
-        "datetime": "2026-11-08",
-        "url": "https://www.pref.shiga.lg.jp/cf00/press-release/33758.html",
-        "tag": "滋賀県"
-      },
-      {
-        "title": "地域交流イベント「オープンホスピタル」を開催します",
-        "dateText": "11月8日（日曜日）10:30〜",
-        "datetime": "2026-11-08",
-        "url": "https://www.pref.shiga.lg.jp/kensou/press-release/34669.html",
-        "tag": "滋賀県"
-      },
       {
         "title": "合同企業説明会「WORKしが博」を開催します！",
         "dateText": "11月11日（水曜日）13:30〜",
         "datetime": "2026-11-11",
         "url": "https://www.pref.shiga.lg.jp/fe00/press-release/33880.html",
         "note": "開催期間：11月11日〜14日",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "びわ博フェス2026を開催します",
+        "dateText": "11月14日（土曜日）",
+        "datetime": "2026-11-14",
+        "url": "https://www.pref.shiga.lg.jp/de52/press-release/34741.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "滋賀の文化財講座「花湖さんの打出のコヅチ」サテライト会場を延暦寺根本中堂に設置します",
+        "dateText": "11月17日（火曜日）",
+        "datetime": "2026-11-17",
+        "url": "https://www.pref.shiga.lg.jp/sd00/press-release/bunkatusitu/34491.html",
         "tag": "滋賀県"
       },
       {
@@ -69,6 +41,13 @@
         "tag": "滋賀県"
       },
       {
+        "title": "採用力向上セミナーvol.29「インターンシップにおける学生との関わり方」を開催します！",
+        "dateText": "11月26日（木曜日）15:00〜",
+        "datetime": "2026-11-26",
+        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/34650.html",
+        "tag": "滋賀県"
+      },
+      {
         "title": "G-NETしがフェスタ2026を開催します！11月29日（日曜日）",
         "dateText": "11月29日（日曜日）",
         "datetime": "2026-11-29",
@@ -83,6 +62,27 @@
         "tag": "滋賀県"
       },
       {
+        "title": "採用力向上セミナーvol.30「求職者に選ばれる求人票の書き方」を開催します！",
+        "dateText": "12月9日（水曜日）15:00〜",
+        "datetime": "2026-12-09",
+        "url": "https://www.pref.shiga.lg.jp/fe00/press-release/34649.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "もしも、県美をつくるなら？‐設計のプロセスに触れ、滋賀にふさわしい美術館を考えるワークショップ‐を開催し、参加者を募集します！",
+        "dateText": "12月12日（土曜日）",
+        "datetime": "2026-12-12",
+        "url": "https://www.pref.shiga.lg.jp/sc30/press-release/34746.html",
+        "tag": "滋賀県"
+      },
+      {
+        "title": "「大河ドラマ「豊臣兄弟！」グランドフィナーレｉｎ滋賀・甲賀～最終回パブリックビューイング＆トークライブ～」の開催および参加者の募集について",
+        "dateText": "12月13日（日曜日）17:00〜",
+        "datetime": "2026-12-13",
+        "url": "https://www.pref.shiga.lg.jp/sa00/press-release/34785.html",
+        "tag": "滋賀県"
+      },
+      {
         "title": "【三つ星企業認証式も同時開催！】令和８年度 湖国のリーダーの会トップセミナー を開催します！",
         "dateText": "1月14日（木曜日）14:00〜",
         "datetime": "2027-01-14",
@@ -91,15 +91,6 @@
       }
     ],
     "city": [
-      {
-        "title": "つどいの広場くまさんとくらぶ「こぐまさんタイム」（優愛保育園モンチ）",
-        "dateText": "11月04日(水曜日)ほか",
-        "datetime": "2026-11-04",
-        "place": "菩提寺優愛保育園モンチ",
-        "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41061.html",
-        "note": "11月4日(水曜日)、11月18日(水曜日）いずれも午前10時から12時",
-        "tag": "市主催"
-      },
       {
         "title": "かんがる～広場（秋の製作・育児相談）",
         "dateText": "11月09日(月曜日)",
@@ -160,6 +151,14 @@
         "place": "菩提寺優愛保育園モンチ",
         "url": "https://www.city.shiga-konan.lg.jp/kosodate/asobi/41319.html",
         "note": "11月13日（金曜日）午前10時00分～12時00分",
+        "tag": "市主催"
+      },
+      {
+        "title": "令和8年度ウォーキングフットボール体験会のお知らせ",
+        "dateText": "11月14日(土曜日)ほか",
+        "datetime": "2026-11-14",
+        "place": "甲賀高分子スタジアム",
+        "url": "https://www.city.shiga-konan.lg.jp/topics/41989.html",
         "tag": "市主催"
       },
       {
